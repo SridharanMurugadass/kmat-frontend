@@ -391,6 +391,7 @@ li > a:only-child:after { content: ''; }
     letter-spacing: 1px;
     color: #eee;
 }
+
 /*-- //header --*/
 
 /*-- popup --*/
@@ -421,6 +422,15 @@ li > a:only-child:after { content: ''; }
     padding: 3em 2em;
     z-index: 999;
 }
+
+.popup .lregister-form{
+	max-height:60vh;
+	overflow-y:scroll;	
+}
+
+.popup .lregister-form::-webkit-scrollbar { 
+	display: none; 
+} 
 .popup p {
     color: #777;
 }
@@ -439,6 +449,7 @@ li > a:only-child:after { content: ''; }
 .popup .close:hover {
     color: #17a2b8;
 }
+
 /*-- //popup --*/
 
 
@@ -656,6 +667,24 @@ h5.modal-title {
     color: #333;
     font-weight: 600;
     letter-spacing: 2px;
+}
+
+.termsPopTitle{
+	font-size: 1.5em;
+	color: #333;
+	font-weight: 600;
+	letter-spacing: 2px;	
+	text-align:left;
+	margin-bottom:15px;
+}
+
+.termsContent .termsList{
+	padding-left: 28px;
+}
+
+.termsContent .termsList li{
+	list-style-type:decimal;
+	margin-bottom:10px;
 }
 
 /* //modal */
@@ -1971,6 +2000,12 @@ address p a:hover {
 	}
 }
 @media(max-width: 414px){
+	.top_header .contactText{
+		float:left;
+	}
+	#logo a {
+		font-size: .5em;
+	}	
 	.buttons p {
 		margin-right: 0px;
 	}
@@ -2051,7 +2086,15 @@ address p a:hover {
 		height: 60px;
 	}
 	.popup {
-		margin: 8em 1em;
+		margin: 4em 1em;
+	}
+	
+	.popup .loginPopbtns{
+		padding:0;
+	}
+	
+	.popup .btnXsPop{
+		margin-bottom:5px;
 	}
 	.about-grids h4 {
 		font-size: 22px;
@@ -2087,6 +2130,18 @@ address p a:hover {
 	.buttons p {
 		font-size: 15px;
 	}
+	.buttonsTop{
+		text-align:center;
+	}	
+	.buttonsTop .contactText{
+		width:100%;
+	}
+	.buttonsTop .topLogin{
+		float:left;
+	}	
+	.buttonsTop .topReg{
+		float:right;
+	}
 	h3.heading {
 		font-size: 28px;
 	}
@@ -2097,7 +2152,7 @@ address p a:hover {
 		font-size: 15px;
 	}
 	#logo a {
-		font-size: .75em;
+		font-size: .7em;
 	}
 	.toggle {
 		padding: 5px 17px;
@@ -2114,6 +2169,9 @@ address p a:hover {
 	}
 }
 @media(max-width: 320px){
+	#logo a {
+		font-size: .55em;
+	}	
 	.agileinfo-logo h3, h3.txt-w3_agile {
 		font-size: 1.3em;
 		line-height: 37px;
